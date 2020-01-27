@@ -15,7 +15,8 @@ require 'pry'
   # }
 
 def remove_strawberry(contacts)
-  contacts.each do |name, vals|
+  contacts.each do |person, contact_details_hash|
+binding.pry
     vals.each do |k,v|
       if k == "favorite_ice_cream_flavors"
         v = ["cookie dough","mint chip"]
